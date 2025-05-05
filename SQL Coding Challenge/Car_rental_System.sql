@@ -147,7 +147,7 @@ select * from Lease ORDER BY endDate desc limit 1;
 -- 11
 select * from Payment where year(transactionDate) = 2023;
 
--- 12
+-- 13
 select V.vehicleID, V.make, V.model, SUM(P.amount) as totalPayment
 from Vehicle V
 JOIN Lease L on V.vehicleID = L.vehicleID
